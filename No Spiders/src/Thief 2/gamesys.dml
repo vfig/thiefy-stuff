@@ -1,0 +1,328 @@
+DML1
+
+/*
+    NoSpiders - removes all spiders from Thief 2 (NewDark).
+
+    Created by vfig (Andy Durdin). Use this however you like.
+    
+    HOW TO INSTALL
+    --------------
+
+    1. Find your Thief II folder.
+    2. Create a new sub-folder in it, called "dbmods".
+    3. Copy this file, gamesys.dml, into that sub-folder.
+    4. Run the game!
+
+    NOTES
+    -----
+
+    If you're not sure if this is working, start Life of the Party and go to
+    the greenhouse. If this is working, the room will will be empty of
+    enemies; if it's not installed properly, there will be a small
+    (friendly!) spider in the room.
+    
+    This patch removes spiderbots too. If you want to keep spiderbots, just
+    delete the entire SpiderBot section below.
+
+    This patch was inspired by Jocke's no spiders patch for System Shock 2.
+*/
+
+
+/* Spider (-2103): --------------------------------------------------------*/
+
+    // ...is on the player's team
+        +ObjProp -2103 "AI_Team"
+        {
+            "" "Good"
+        }
+    // ...has only 1 hit point
+        ObjProp -2103 "HitPoints"
+        {
+            "" 1
+        }
+    // ...has max 1 hit point.
+        ObjProp -2103 "MAX_HP"
+        {
+            "" 1
+        }
+    // ...looks like a small white blob
+        ObjProp -2103 "ModelName"
+        {
+            "" "plant05"
+        }
+    // ...has no physics model
+    // (sadly, setting PhysType doesn't seem to work)
+        /*
+        ObjProp -2103 "PhysType"
+        {
+            "Type" "None"
+        }
+        */
+    // ...makes no sound
+        -ObjProp -2103 "SpchVoice"
+    // ...is invisible
+        +ObjProp -2103 "RenderType"
+    {
+        "" "Not Rendered"
+    }
+
+    // ...is teleported outside the map when taking damage
+    // (sadly, destroy_obj doesn't seem to work, so using move_obj instead)
+        +Receptron -2103 "WeaponStim"
+        {
+            Min None
+            Max None
+
+            Target Me
+            Agent Me
+
+            Effect "move_obj"
+            {
+                "Position" 0,0,-1000
+            }
+            //Effect "destroy_obj"
+        }
+    // ...takes damage and dies at mission start
+        +StimSource -2103 "WeaponStim"
+        {
+            Intensity 100.0
+            Propagator "Radius"
+            {
+                Life
+                {
+                     // Flags means "destroy object on completion"
+                    // (sadly, doesn't seem to be applied)
+                    "Flags" 0x2
+                    "Period" 5000
+                }
+                Shape
+                {
+                    "Radius" 1.0
+                }
+            }
+        }
+
+
+/* HugeSpider (-2997): ----------------------------------------------------*/
+
+    // ...is on the player's team
+        +ObjProp -2997 "AI_Team"
+        {
+            "" "Good"
+        }
+    // ...has only 1 hit point
+        ObjProp -2997 "HitPoints"
+        {
+            "" 1
+        }
+    // ...has max 1 hit point.
+        ObjProp -2997 "MAX_HP"
+        {
+            "" 1
+        }
+    // ...looks like a small white blob
+        ObjProp -2997 "ModelName"
+        {
+            "" "plant05"
+        }
+    // ...has no physics model
+    // (sadly, setting PhysType doesn't seem to work)
+        /*
+        ObjProp -2997 "PhysType"
+        {
+            "Type" "None"
+        }
+        */
+    // ...makes no sound
+        -ObjProp -2997 "SpchVoice"
+    // ...is invisible
+        +ObjProp -2997 "RenderType"
+    {
+        "" "Not Rendered"
+    }
+
+    // ...is teleported outside the map when taking damage
+    // (sadly, destroy_obj doesn't seem to work, so using move_obj instead)
+        +Receptron -2997 "WeaponStim"
+        {
+            Min None
+            Max None
+
+            Target Me
+            Agent Me
+
+            Effect "move_obj"
+            {
+                "Position" 0,0,-1000
+            }
+            //Effect "destroy_obj"
+        }
+    // ...takes damage and dies at mission start
+        +StimSource -2997 "WeaponStim"
+        {
+            Intensity 100.0
+            Propagator "Radius"
+            {
+                Life
+                {
+                     // Flags means "destroy object on completion"
+                    // (sadly, doesn't seem to be applied)
+                    "Flags" 0x2
+                    "Period" 5000
+                }
+                Shape
+                {
+                    "Radius" 1.0
+                }
+            }
+        }
+
+
+/* SewerSpider (-2998): ---------------------------------------------------*/
+
+    // ...is on the player's team
+        +ObjProp -2998 "AI_Team"
+        {
+            "" "Good"
+        }
+    // ...has only 1 hit point
+        ObjProp -2998 "HitPoints"
+        {
+            "" 1
+        }
+    // ...has max 1 hit point.
+        ObjProp -2998 "MAX_HP"
+        {
+            "" 1
+        }
+    // ...looks like a small white blob
+        ObjProp -2998 "ModelName"
+        {
+            "" "plant05"
+        }
+    // ...has no physics model
+    // (sadly, setting PhysType doesn't seem to work)
+        /*
+        ObjProp -2998 "PhysType"
+        {
+            "Type" "None"
+        }
+        */
+    // ...makes no sound
+        -ObjProp -2998 "SpchVoice"
+    // ...is invisible
+        +ObjProp -2998 "RenderType"
+    {
+        "" "Not Rendered"
+    }
+
+    // ...is teleported outside the map when taking damage
+    // (sadly, destroy_obj doesn't seem to work, so using move_obj instead)
+        +Receptron -2998 "WeaponStim"
+        {
+            Min None
+            Max None
+
+            Target Me
+            Agent Me
+
+            Effect "move_obj"
+            {
+                "Position" 0,0,-1000
+            }
+            //Effect "destroy_obj"
+        }
+    // ...takes damage and dies at mission start
+        +StimSource -2998 "WeaponStim"
+        {
+            Intensity 100.0
+            Propagator "Radius"
+            {
+                Life
+                {
+                     // Flags means "destroy object on completion"
+                    // (sadly, doesn't seem to be applied)
+                    "Flags" 0x2
+                    "Period" 5000
+                }
+                Shape
+                {
+                    "Radius" 1.0
+                }
+            }
+        }
+
+
+/* SpiderBot (-3240): -----------------------------------------------------*/
+
+    // ...is on the player's team
+        +ObjProp -3240 "AI_Team"
+        {
+            "" "Good"
+        }
+    // ...has only 1 hit point
+        ObjProp -3240 "HitPoints"
+        {
+            "" 1
+        }
+    // ...has max 1 hit point.
+        ObjProp -3240 "MAX_HP"
+        {
+            "" 1
+        }
+    // ...looks like a small white blob
+        ObjProp -3240 "ModelName"
+        {
+            "" "plant05"
+        }
+    // ...has no physics model
+    // (sadly, setting PhysType doesn't seem to work)
+        /*
+        ObjProp -3240 "PhysType"
+        {
+            "Type" "None"
+        }
+        */
+    // ...makes no sound
+        -ObjProp -3240 "SpchVoice"
+    // ...is invisible
+        +ObjProp -3240 "RenderType"
+    {
+        "" "Not Rendered"
+    }
+
+    // ...is teleported outside the map when taking damage
+    // (sadly, destroy_obj doesn't seem to work, so using move_obj instead)
+        +Receptron -3240 "WeaponStim"
+        {
+            Min None
+            Max None
+
+            Target Me
+            Agent Me
+
+            Effect "move_obj"
+            {
+                "Position" 0,0,-1000
+            }
+            //Effect "destroy_obj"
+        }
+    // ...takes damage and dies at mission start
+        +StimSource -3240 "WeaponStim"
+        {
+            Intensity 100.0
+            Propagator "Radius"
+            {
+                Life
+                {
+                     // Flags means "destroy object on completion"
+                    // (sadly, doesn't seem to be applied)
+                    "Flags" 0x2
+                    "Period" 5000
+                }
+                Shape
+                {
+                    "Radius" 1.0
+                }
+            }
+        }
