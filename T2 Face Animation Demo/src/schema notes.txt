@@ -1,0 +1,43 @@
+schema sg1a0            //AT ALERT 0  
+schema sg5a0            //AT ALERT 0  
+
+//c1101 -Stand off
+schema sg11101A     //"...And I'm telling you.."
+archetype AI_CONV
+sg11101A
+schema_voice vguard1  1 c1101  (LineNo 1 1)
+
+schema sg51101B
+archetype AI_CONV
+sg51101B
+schema_voice vguard5 1 c1101  (LineNo 2 2)
+
+schema sg11101C     
+archetype AI_CONV
+sg11101C
+schema_voice vguard1  1 c1101  (LineNo 3 3)
+
+schema sg51101D
+archetype AI_CONV
+sg51101D
+schema_voice vguard5 1 c1101  (LineNo 4 4)
+
+schema sg11101E     
+archetype AI_CONV
+sg11101E
+schema_voice vguard1  1 c1101  (LineNo 5 5)
+
+schema sg51101F
+archetype AI_CONV
+sg51101F
+schema_voice vguard5 1 c1101  (LineNo 6 6)
+
+schema sg11101G     
+archetype AI_CONV
+sg11101G
+schema_voice vguard1  1 c1101  (LineNo 7 7)
+
+schema sg51101H
+archetype AI_CONV
+sg51101H
+schema_voice vguard5 1 c1101  (LineNo 8 8)  
