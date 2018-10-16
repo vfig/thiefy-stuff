@@ -1,0 +1,29 @@
+// Valid mission flags
+//
+// skip         This mission doesn't exist; it should be skipped.
+// no_briefing  Skip the briefing movie
+// no_loadout   Skip the loadout
+// cutscene     Play a cutscene immediately afterward
+// end          End the game when this mission is completed
+// 
+
+miss_1: "skip"
+miss_2: "skip"
+miss_3: "skip"
+miss_4: "skip"
+miss_5: "skip"
+miss_6: "skip"
+miss_7: "skip"
+miss_8: "skip"
+miss_9: "skip"
+miss_10: "skip"
+miss_11: "skip"
+miss_12: "skip"
+miss_13: "skip"
+miss_14: "skip"
+miss_15: "skip"
+miss_16: "skip"
+miss_17: "skip"
+miss_18: "skip"
+miss_19: "skip"
+miss_20: "no_briefing,no_loadout,end" 

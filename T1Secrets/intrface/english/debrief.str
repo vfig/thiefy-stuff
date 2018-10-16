@@ -1,0 +1,106 @@
+menu: "Menu"
+continue: "Continue"
+stats: "Stats"
+goals: "Goals"
+
+restart: "Replay"
+
+hours: "Hours"
+minutes: "Minutes"
+seconds: "Seconds"
+hour: "Hour"
+minute: "Minute"
+second: "Second"
+true: "True"
+false: "False"
+some: "Some"
+none: "None"
+
+stat_0: "DrSTime"
+text_0: "Total Time: "
+format_0: "@t"
+
+stat_1: "TOTAL_LOOT"
+text_1: "Found "
+format_1: "@x@=01@c%d"
+
+stat_2: "DrSLootTotal"
+text_2: " Loot out of "
+format_2: "%d" 
+
+stat_3: "DrSPocketOK"
+text_3: "Pockets Picked: "
+format_3: "@s%d"
+
+stat_4: "DrSPocketCnt"
+text_4: " out of "
+format_4: "%d"
+
+stat_5: "DrSLockPick"
+text_5: "Locks Picked: "
+format_5: "@<05%d"
+
+stat_6: "DrSBackStabs"
+text_6: "Back Stabs: "
+format_6: "@c%d"
+
+stat_7: "DrSKNockout"
+text_7: " Knock Outs: "
+format_7: "@c%d"
+
+stat_8: "DrSAerials"
+text_8: " While Airborne: "
+format_8: "@+%d"
+
+stat_9: "DrSDmgDealt"
+text_9: "Damage Dealt: "
+format_9: "@c%d"
+
+stat_10: "DrSDmgTaken"
+text_10: " Damage Taken: "
+format_10: "@c%d"
+
+stat_11: "DrSHealing"
+text_11: " Healing Taken: "
+format_11: "%d"
+
+stat_12: "DrSInnocent"
+text_12: "Innocents Killed: "
+format_12: "@c@q"
+
+stat_13: "DrSKills"
+text_13: ", and others Killed: "
+format_13: "%d"
+
+stat_14: "DrSBodyFound"
+text_14: "Bodies discovered by enemies: "
+format_14: "@+%d"
+
+// I have inserted the secrets stats here, just before campaign totals.
+
+stat_15: "SecretsFound"
+text_15: "Secrets found: "
+format_15: "@c%d"
+
+stat_16: "SecretsCount"
+text_16: " out of "
+format_16: "%d" 
+
+// The subsequent stats are unchanged, but only renumbered.
+
+stat_17: "DrSCmTime"
+text_17: "Campaign Totals\nTime So Far: "
+format_17: "@n@x@<03@t"
+
+stat_18: "DrSCmLoot"
+text_18: "Loot So Far: "
+format_18: "%d"
+
+stat_19: "DrSCmDmgDeal"
+text_19: "Total Damage Dealt: "
+format_19: "@c%d"
+
+stat_20: "DrSCmDmgTake"
+text_20: " and Received: "
+format_20: "%d"
+
