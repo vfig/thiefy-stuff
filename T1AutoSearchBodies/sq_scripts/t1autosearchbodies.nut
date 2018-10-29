@@ -16,7 +16,7 @@
 **    T1AutoSearchBodies script ato it. In the default Thief Gold gamesys,
 **    these archetypes are:
 **
-**      * Human (-14): { JAccuse; Corpsed; CorpseFrobHack; GoldSearchCorpseHack; FALSE}
+**      * Human (-14): { JAccuse; Corpsed; CorpseFrobHack; ; FALSE}
 **      * Haunt (-1320): { Corpsed; CorpseFrobHack; ; ; FALSE}
 **      * ZombieTypes (-1321): { ZombieRegen; Corpsed; CorpseFrobHack; ; FALSE}
 **      * ApeBeast (-1328): { Corpsed; CorpseFrobHack; ; ; FALSE}
